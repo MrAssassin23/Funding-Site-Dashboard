@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.stroke-transparent {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  background: no-repeat url(../Assests/pexels-pixabay-210243.jpg) 100%;
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-position: 0px 0px;
+}
+
+div.row-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  padding: 0rem 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.row-profile div.left {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fafafa;
+  padding: 1.9rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.row-profile div.left h5 {
+  padding: 0.1rem 0.3rem;
+  font-weight: inherit;
+}
+
+div.row-profile div.right {
+  padding: 1.9rem 0rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.row-profile div.right button {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0 2.5rem 0 0;
+}
+
+div.row-profile div.right img {
+  height: 2.3rem;
+  border-radius: 0.2rem;
+  margin: 0 0 0 2.5rem;
+}
+
+div.row-profile-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: calc(350px - 5rem);
+  padding: 2rem 3rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.row-profile-details div.col-photo {
+  position: relative;
+  width: 450px;
+}
+
+div.row-profile-details div.col-photo img {
+  width: 100%;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.4);
+}
+
+div.row-profile-details div.col-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+div.row-profile-details div.col-container div.col-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+div.row-profile-details div.col-container div.col-details h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+div.row-profile-details div.col-container div.col-details span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.row-profile-details div.col-container div.col-details span h6.title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+div.row-profile-details div.col-container div.col-details span h6.detail {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+div.row-profile-details div.col-container div.col-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.8rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col1 {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col1 svg.progress-ring {
+  height: 7rem;
+  width: 7rem;
+  position: absolute;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col1 svg.progress-ring circle.progress-ring-circle {
+  fill: transparent;
+  stroke: #ee913a;
+  stroke-width: 0.4rem;
+  stroke-dasharray: 230 90;
+  stroke-linecap: round;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col1 svg.progress-ring circle.progress-ring-circle2 {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 0.4rem;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col1 h5 {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fafafa;
+  border-radius: 50%;
+  padding: 1.3rem 1rem;
+  position: relative;
+  left: 1.4rem;
+  top: 1.4rem;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 1rem;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col2 h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col2 h6 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+div.row-profile-details div.col-container div.col-status div.completion div.progress-col2 button.complete {
+  background-color: #ee913a;
+  width: 80%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+div.row-profile-details div.col-container div.col-status i#camera {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+div.body-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 3rem;
+}
+
+aside {
+  padding-top: 8.5rem;
+  width: 500px;
+  border-right: 2px solid #d1d1d1;
+}
+
+aside div.side-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0.8rem 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+aside div.side-header h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0f1013;
+  text-transform: uppercase;
+}
+
+aside div.side-header i {
+  color: #707070;
+}
+
+aside div.img-container h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #707070;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+aside div.img-container span {
+  padding: 0.6rem;
+}
+
+aside div.img-container img {
+  height: 3.4rem;
+  border-radius: 1.7rem;
+}
+
+aside div.details h6.title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #707070;
+  text-transform: uppercase;
+  padding: 0.2rem 0;
+}
+
+aside div.details h6.detail {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0f1013;
+  padding: 0.1rem 0 0.6rem;
+}
+
+section {
+  width: 100%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+nav input[name="nav-item"]:checked + label {
+  border-bottom: 2px solid #d45a18;
+}
+
+nav input[name="nav-item"]:checked + label h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0f1013;
+}
+
+nav input[name="nav-item"]:checked + label i {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f1013;
+  display: inline-block !important;
+}
+
+nav label {
+  padding: 2rem 0;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+nav label h6 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #707070;
+}
+
+nav label i {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #707070;
+  display: none !important;
+}
+
+nav button.claim {
+  background-color: #459a81;
+  height: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fafafa;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.8rem;
+}
+
+nav button.claim i {
+  padding-right: 0.5rem;
+}
+
+div.claim-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  padding: 2.5rem  0 2.5rem 1.5rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+      grid-template-areas: "claim1 claim2 claim3" "fund1 fund1 activities" "fund2 fund2 activities" "fund3 fund3 activities";
+}
+
+div.claim-container div.claim {
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.claim-container div.claim h4 {
+  font-size: 3.5rem;
+  font-weight: 400 !important;
+  color: #0f1013;
+  border-right: 2px solid #d1d1d1;
+  padding-right: 1rem;
+}
+
+div.claim-container div.claim div.claims {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1rem;
+}
+
+div.claim-container div.claim div.claims h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #707070;
+  text-transform: uppercase;
+}
+
+div.claim-container div.claim div.claims div.users {
+  position: relative;
+  height: 2rem;
+}
+
+div.claim-container div.claim div.claims div.users img {
+  height: 2rem;
+  border-radius: 50%;
+  top: 0;
+}
+
+div.claim-container div.claim div.claims div.users img#user1 {
+  position: absolute;
+  left: 0;
+}
+
+div.claim-container div.claim div.claims div.users img#user2 {
+  position: absolute;
+  left: 1.2rem;
+}
+
+div.claim-container div.claim div.claims div.users img#user3 {
+  position: absolute;
+  left: 2.2rem;
+}
+
+div.claim-container div.claim div.claims div.users img#user4 {
+  position: absolute;
+  left: 3.2rem;
+}
+
+div.claim-container div.claim div.claims div.users h6 {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fafafa;
+  background-color: rgba(69, 154, 129, 0.6);
+  padding: 0.3rem 0;
+  position: absolute;
+  top: 0;
+  left: 3.2rem;
+}
+
+div.claim-container div#claim1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: claim1;
+}
+
+div.claim-container div#claim2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: claim2;
+}
+
+div.claim-container div#claim3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: claim3;
+}
+
+div.claim-container div.fund {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+}
+
+div.claim-container div.fund img {
+  height: 9rem;
+  border-radius: 0.3rem;
+}
+
+div.claim-container div.fund div.fund-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 1rem;
+}
+
+div.claim-container div.fund div.fund-details h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0f1013;
+  text-transform: uppercase;
+}
+
+div.claim-container div.fund div.fund-details span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.claim-container div.fund div.fund-details span i {
+  font-size: 1.2rem;
+  color: #d1d1d1;
+  padding-right: 0.6rem;
+}
+
+div.claim-container div.fund div.fund-details span h6.title {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #707070;
+}
+
+div.claim-container div.fund div.fund-details span h6.detail {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #d1d1d1;
+}
+
+div.claim-container div.fund button.pay {
+  background-color: #ee913a;
+  height: 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fafafa;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.8rem;
+}
+
+div.claim-container div.fund button.pay i {
+  padding-right: 0.5rem;
+}
+
+div.claim-container div#fund1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fund1;
+}
+
+div.claim-container div#fund2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fund2;
+}
+
+div.claim-container div#fund3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: fund3;
+}
+
+div.claim-container div.activity-container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: activities;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.15rem 20px rgba(0, 0, 0, 0.1);
+}
+
+div.claim-container div.activity-container h4.activity-header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #707070;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+div.claim-container div.activity-container div.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+div.claim-container div.activity-container div.activity i {
+  font-size: 0.7rem;
+  padding: 0.4rem 0;
+}
+
+div.claim-container div.activity-container div.activity #dot-1 {
+  color: #64cde7;
+}
+
+div.claim-container div.activity-container div.activity #dot-2 {
+  color: #d45a18;
+}
+
+div.claim-container div.activity-container div.activity #dot-3 {
+  color: #459a81;
+}
+
+div.claim-container div.activity-container div.activity div.activity-detail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 0.5rem;
+}
+
+div.claim-container div.activity-container div.activity div.activity-detail h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f1013;
+}
+
+div.claim-container div.activity-container div.activity div.activity-detail h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #707070;
+  padding: 0.5rem 0;
+}
+
+div.claim-container div.activity-container div.activity div.activity-detail h6 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d1d1d1;
+}
+/*# sourceMappingURL=main.css.map */

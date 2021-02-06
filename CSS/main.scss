@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+$white: #fafafa;
+$white-light: rgba(
+  $color: white,
+  $alpha: 0.1,
+);
+$white-light1: rgba(
+  $color: white,
+  $alpha: 0.3,
+);
+$white-light2: rgba(
+  $color: white,
+  $alpha: 0.5,
+);
+$font-dark: #0f1013;
+$font-light: #707070;
+$light_grey: #d1d1d1;
+$swatch_5: #d9c0aa;
+$orange: #d45a18;
+$yellow: #ee913a;
+$blue: #459a81;
+
+@mixin fontstyle($size: 1rem, $weight: normal, $color: $font-light) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin displayflex(
+  $direction: row,
+  $align-item: stretch,
+  $justify-content: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+button {
+  border: none;
+  outline: none;
+}
+.stroke-transparent {
+  -webkit-text-stroke: 1px $white-light2;
+  -webkit-text-fill-color: transparent;
+}
+header {
+  background: no-repeat url(../Assests/pexels-pixabay-210243.jpg) 100%;
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-position: 0px 0px;
+}
+div.row-profile {
+  @include displayflex($justify-content: space-between);
+  height: 5rem;
+  padding: 0rem 3rem;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  div.left {
+    @include fontstyle(1.2rem, 500, $white);
+    padding: 1.9rem 0rem;
+    @include displayflex($align-item: center);
+    h5 {
+      padding: 0.1rem 0.3rem;
+      font-weight: inherit;
+    }
+  }
+  div.right {
+    padding: 1.9rem 0rem;
+    @include fontstyle(1.7rem, 500, $white-light2);
+    @include displayflex($align-item: center);
+    button {
+      background-color: $white-light;
+      @include fontstyle(0.8rem, 500, $white-light2);
+      border-radius: 0.2rem;
+      padding: 0.6rem 1.2rem;
+      margin: 0 2.5rem 0 0;
+    }
+    img {
+      height: 2.3rem;
+      border-radius: 0.2rem;
+      margin: 0 0 0 2.5rem;
+    }
+  }
+}
+div.row-profile-details {
+  @include displayflex();
+  height: calc(350px - 5rem);
+  padding: 2rem 3rem 0.5rem;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  div.col-photo {
+    position: relative;
+    width: 450px;
+    img {
+      width: 100%;
+      border-radius: 0.3rem;
+      box-shadow: 0px 0.15rem 20px rgba($color: #000000, $alpha: 0.4);
+    }
+  }
+  div.col-container {
+    @include displayflex($justify-content: space-between);
+    width: 100%;
+    margin-left: 2rem;
+    div.col-details {
+      @include displayflex(column, $justify-content: space-between);
+      margin-bottom: 1rem;
+      h4 {
+        @include fontstyle(2rem, 500, $white);
+      }
+      span {
+        @include displayflex();
+        h6.title {
+          @include fontstyle(0.9rem, 400, $white-light2);
+        }
+        h6.detail {
+          @include fontstyle(0.9rem, 400, $white);
+        }
+      }
+    }
+    div.col-status {
+      @include displayflex(column, flex-end, space-between);
+      div.completion {
+        @include displayflex();
+        padding: 1.8rem;
+        border-radius: 0.3rem;
+        background-color: $white-light1;
+        div.progress-col1 {
+          position: relative;
+          width: 7rem;
+          height: 7rem;
+          svg.progress-ring {
+            height: 7rem;
+            width: 7rem;
+            position: absolute;
+            circle.progress-ring-circle {
+              fill: transparent;
+              stroke: $yellow;
+              stroke-width: 0.4rem;
+              stroke-dasharray: 230 90;
+              stroke-linecap: round;
+            }
+            circle.progress-ring-circle2 {
+              fill: transparent;
+              stroke: $white-light;
+              stroke-width: 0.4rem;
+            }
+          }
+          h5 {
+            width: 4.2rem;
+            height: 4.2rem;
+            background-color: $white-light;
+            @include fontstyle(1.2rem, 500, $white);
+            border-radius: 50%;
+            padding: 1.3rem 1rem;
+            position: relative;
+            left: 1.4rem;
+            top: 1.4rem;
+          }
+        }
+        div.progress-col2 {
+          @include displayflex(column);
+          margin-left: 1rem;
+          h5 {
+            @include fontstyle(1.2rem, 500, $white);
+          }
+          h6 {
+            @include fontstyle(0.85rem, 400, $white-light1);
+          }
+          button.complete {
+            background-color: $yellow;
+            width: 80%;
+            @include fontstyle(0.8rem, 500, $white-light2);
+            border-radius: 0.2rem;
+            padding: 0.6rem 1.2rem;
+          }
+        }
+      }
+      i#camera {
+        background-color: $white-light;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
+div.body-container {
+  @include displayflex();
+  margin: 0 3rem;
+}
+aside {
+  padding-top: 8.5rem;
+  width: 500px;
+  border-right: 2px solid $light-grey;
+  div.side-header {
+    @include displayflex(row, center, space-between);
+    margin: 1rem 0.8rem 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $light-grey;
+    h4 {
+      @include fontstyle(1.4rem, 600, $font-dark);
+      text-transform: uppercase;
+    }
+    i {
+      color: $font-light;
+    }
+  }
+  div.img-container {
+    h4 {
+      @include fontstyle(0.9rem, 400, $font-light);
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+    span {
+      padding: 0.6rem;
+    }
+    img {
+      height: 3.4rem;
+      border-radius: 1.7rem;
+    }
+  }
+  div.details {
+    h6.title {
+      @include fontstyle(0.9rem, 400, $font-light);
+      text-transform: uppercase;
+      padding: 0.2rem 0;
+    }
+    h6.detail {
+      @include fontstyle(0.9rem, 500, $font-dark);
+      padding: 0.1rem 0 0.6rem;
+    }
+  }
+}
+section {
+  width: 100%;
+}
+input[type="radio"] {
+  display: none;
+}
+nav {
+  @include displayflex($justify-content: space-between);
+  border-bottom: 2px solid $light-grey;
+  input[name="nav-item"]:checked + label {
+    border-bottom: 2px solid $orange;
+    h6 {
+      @include fontstyle(1rem, bold, $font-dark);
+    }
+    i {
+      @include fontstyle(1rem, 600, $font-dark);
+      display: inline-block !important;
+    }
+  }
+  label {
+    padding: 2rem 0;
+    margin: 0 1rem;
+    display: inline-block;
+    h6 {
+      display: inline-block;
+      @include fontstyle(1rem, 600, $font-light);
+    }
+    i {
+      @include fontstyle(1rem, 600, $font-light);
+      display: none !important;
+    }
+  }
+  button.claim {
+    background-color: $blue;
+    height: 2rem;
+    align-self: center;
+    @include fontstyle(0.8rem, 500, $white);
+    border-radius: 0.2rem;
+    padding: 0.6rem 0.8rem;
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
+div.claim-container {
+  display: grid;
+  width: 100%;
+  padding: 2.5rem  0 2.5rem 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  grid-template-areas:
+    "claim1 claim2 claim3"
+    "fund1 fund1 activities"
+    "fund2 fund2 activities"
+    "fund3 fund3 activities";
+  div.claim {
+    padding: 1rem;
+    box-shadow: 0px 0.15rem 20px rgba($color: #000000, $alpha: 0.1);
+    @include displayflex();
+    h4 {
+      @include fontstyle(3.5rem, 400 !important, $font-dark);
+      border-right: 2px solid $light_grey;
+      padding-right: 1rem;
+    }
+    div.claims {
+      @include displayflex(column, $justify-content: space-between);
+      padding-left: 1rem;
+      h5 {
+        @include fontstyle(1rem, 600, $font-light);
+        text-transform: uppercase;
+      }
+      div.users {
+        position: relative;
+        height: 2rem;
+        img {
+          height: 2rem;
+          border-radius: 50%;
+          top: 0;
+        }
+        img#user1 {
+          position: absolute;
+          left: 0;
+        }
+        img#user2 {
+          position: absolute;
+          left: 1.2rem;
+        }
+        img#user3 {
+          position: absolute;
+          left: 2.2rem;
+        }
+        img#user4 {
+          position: absolute;
+          left: 3.2rem;
+        }
+        h6 {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          @include fontstyle(1rem, 400, $white);
+          background-color: rgba($color: $blue, $alpha: 0.6);
+          padding: 0.3rem 0;
+          position: absolute;
+          top: 0;
+          left: 3.2rem;
+        }
+      }
+    }
+  }
+  div#claim1 {
+    grid-area: claim1;
+  }
+  div#claim2 {
+    grid-area: claim2;
+  }
+  div#claim3 {
+    grid-area: claim3;
+  }
+  div.fund {
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0px 0.15rem 20px rgba($color: #000000, $alpha: 0.1);
+    img {
+      height: 9rem;
+      border-radius: 0.3rem;
+    }
+    div.fund-details {
+      @include displayflex(column, flex-start, space-between);
+      flex: 1;
+      padding: 0 1rem;
+      h5 {
+        @include fontstyle(1.3rem, 600, $font-dark);
+        text-transform: uppercase;
+      }
+      span {
+        @include displayflex(row, center);
+        i {
+          font-size: 1.2rem;
+          color: $light_grey;
+          padding-right: 0.6rem;
+        }
+        h6.title {
+          @include fontstyle(0.9rem, 400, $font-light);
+        }
+        h6.detail {
+          @include fontstyle(0.9rem, 400, $light_grey);
+        }
+      }
+    }
+    button.pay {
+      background-color: $yellow;
+      height: 2rem;
+      align-self: flex-end;
+      @include fontstyle(0.8rem, 500, $white);
+      border-radius: 0.2rem;
+      padding: 0.6rem 0.8rem;
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+  div#fund1 {
+    grid-area: fund1;
+  }
+  div#fund2 {
+    grid-area: fund2;
+  }
+  div#fund3 {
+    grid-area: fund3;
+  }
+  div.activity-container{
+    grid-area: activities;
+    padding: 1rem;
+    box-shadow: 0px 0.15rem 20px rgba($color: #000000, $alpha: 0.1);
+    h4.activity-header{
+      @include fontstyle(1rem, 500, $font-light);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid $light_grey;
+    }
+    div.activity{
+      display: flex;
+      margin: 1rem 0;
+      i{
+        font-size: 0.7rem;
+        padding: 0.4rem 0;
+      }
+      #dot-1{
+        color: rgb(100, 205, 231);
+      }
+      #dot-2{
+        color: $orange;
+      }
+      #dot-3{
+        color: $blue;
+      }
+      div.activity-detail{
+        flex: 1;
+        padding-left: 0.5rem;
+        h4{
+          @include fontstyle(1rem, 600, $font-dark);
+        }
+        h5{
+          @include fontstyle(0.8rem, 600, $font-light);
+          padding: 0.5rem 0;
+        }
+        h6{
+          @include fontstyle(0.8rem, 600, $light-grey);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Site Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row-profile">
+                <div class="left">
+                    <i class="fas fa-comment-alt"></i>
+                    <h5>SKS Funding</h5>
+                </div>
+                <div class="right">
+                    <button class="help">NEED HELP</button>
+                    <i class="fas fa-bell stroke-transparent"></i>
+                    <img src="Assests/user5.jpg" alt="" id="profile-sm">
+                </div>
+            </div>
+            <div class="row-profile-details">
+                <div class="col-photo">
+                    <img src="Assests/user5.jpg" alt="" id="profile-sm">
+                </div>
+                <div class="col-container">
+                    <div class="col-details">
+                        <h4>Hi, Emma good morning &#128079</h4>
+                        <span>
+                            <h6 class="title">Email - </h6>
+                            <h6 class="detail">&nbsp; akp.emma1231@gmail.com</h6>
+                        </span>
+                        <span>
+                            <h6 class="title">Phone - </h6>
+                            <h6 class="detail">&nbsp; +91-8897584843</h6>
+                        </span>
+                        <span>
+                            <h6 class="title">Adress - </h6>
+                            <h6 class="detail">&nbsp; Po Box 2103 Linde, NJ 07036 (USA)</h6>
+                        </span>
+                        <span>
+                            <h6 class="title">Plan - </h6>
+                            <h6 class="detail">&nbsp; $100</h6>
+                        </span>
+                        <span>
+                            <h6 class="title">Joined - </h6>
+                            <h6 class="detail">&nbsp; Mon 22nd Feb 2019</h6>
+                        </span>
+                    </div>
+                    <div class="col-status">
+                        <div class="completion">
+                            <div class="progress-col1">
+                                <svg class="progress-ring">
+                                    <circle class="progress-ring-circle" r="3.1rem" cx="3.5rem" cy="3.5rem" />
+                                </svg>
+                                <svg class="progress-ring">
+                                    <circle class="progress-ring-circle2" r="3.1rem" cx="3.5rem" cy="3.5rem" />
+                                </svg>
+                                <h5>75%</h5>
+                            </div>
+                            <div class="progress-col2">
+                                <h5>Profile Completion</h5>
+                                <h6>Please complete profile</h6>
+                                <span style="flex: 1;"></span>
+                                <button class="complete">COMPLETE</button>
+                            </div>
+                        </div>
+                        <i class="fas fa-camera stroke-transparent" id="camera"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="body-container">
+            <aside>
+                <div class="side-header">
+                    <h4>About My Famliy</h4>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="img-container">
+                    <h4 class="title">Covered Persons</h4>
+                    <div class="imgs">
+                        <img src="Assests/user2.jpg"><span></span>
+                        <img src="Assests/user5.jpg">
+                    </div>
+                </div>
+                <div class="img-container">
+                    <h4 class="title">Benificiary Persons</h4>
+                    <div class="imgs">
+                        <img src="Assests/user1.jpg"><span></span>
+                        <img src="Assests/user3.jpg"><span></span>
+                        <img src="Assests/user4.jpg">
+                    </div>
+                </div>
+                <div class="img-container">
+                    <h4 class="title">Emergency Persons</h4>
+                    <div class="imgs">
+                        <img src="Assests/user3.jpg"><span></span>
+                        <img src="Assests/user7.jpg"><span></span>
+                        <img src="Assests/user2.jpg"><span></span>
+                        <img src="Assests/user6.jpg">
+                    </div>
+                </div>
+                <div class="side-header">
+                    <h4>About Me</h4>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="details">
+                    <h6 class="title">Email </h6>
+                    <h6 class="detail"> akp.emma1231@gmail.com</h6>
+                    <h6 class="title">Phone </h6>
+                    <h6 class="detail"> +91-8897584843</h6>
+                    <h6 class="title">Adress </h6>
+                    <h6 class="detail"> Po Box 2103 Linde, NJ 07036 (USA)</h6>
+                    <h6 class="title">Plan </h6>
+                    <h6 class="detail"> $100</h6>
+                    <h6 class="title">Joined </h6>
+                    <h6 class="detail"> Mon 22nd Feb 2019</h6>
+                </div>
+            </aside>
+            <section>
+                <nav>
+                    <div class="nav-items">
+                        <input type="radio" name="nav-item" id="item1" checked>
+                        <label for="item1">
+                            <i class="fas fa-home"></i>
+                            <h6>Dashboard</h6>
+                        </label>
+                        <input type="radio" name="nav-item" id="item2">
+                        <label for="item2">
+                            <i class="fas fa-plus"></i>
+                            <h6>New Claims</h6>
+                        </label>
+                        <input type="radio" name="nav-item" id="item3">
+                        <label for="item3">
+                            <i class="fas fa-check-circle"></i>
+                            <h6>Completed Claims</h6>
+                        </label>
+                        <input type="radio" name="nav-item" id="item4">
+                        <label for="item4">
+                            <i class="fas fa-file-archive"></i>
+                            <h6>Past Claims</h6>
+                        </label>
+                        <input type="radio" name="nav-item" id="item5">
+                        <label for="item5">
+                            <i class="fas fa-users"></i>
+                            <h6>Members</h6>
+                        </label>
+                        <input type="radio" name="nav-item" id="item6">
+                        <label for="item6">
+                            <i class="fas fa-user"></i>
+                            <h6>My Claims</h6>
+                        </label>
+                    </div>
+                    <button class="claim"><i class="fas fa-piggy-bank"></i>CLAIM</button>
+                </nav>
+                <div class="claim-container">
+                    <div class="claim" id="claim1">
+                        <h4 class="num">23</h4>
+                        <div class="claims">
+                            <h5>new claims</h5>
+                            <div class="users">
+                                <img src="Assests/user2.jpg" alt="" id="user1">
+                                <img src="Assests/user6.jpg" alt="" id="user2">
+                                <img src="Assests/user1.jpg" alt="" id="user3">
+                                <img src="Assests/user7.jpg" alt="" id="user4">
+                                <h6>+32</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="claim" id="claim2">
+                        <h4 class="num">76</h4>
+                        <div class="claims">
+                            <h5>new members</h5>
+                            <div class="users">
+                                <img src="Assests/user1.jpg" alt="" id="user1">
+                                <img src="Assests/user3.jpg" alt="" id="user2">
+                                <img src="Assests/user4.jpg" alt="" id="user3">
+                                <img src="Assests/user5.jpg" alt="" id="user4">
+                                <h6>+32</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="claim" id="claim3">
+                        <h4 class="num">102</h4>
+                        <div class="claims">
+                            <h5>total claims</h5>
+                            <div class="users">
+                                <img src="Assests/user3.jpg" alt="" id="user1">
+                                <img src="Assests/user4.jpg" alt="" id="user2">
+                                <img src="Assests/user6.jpg" alt="" id="user3">
+                                <img src="Assests/user2.jpg" alt="" id="user4">
+                                <h6>+32</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fund" id="fund1">
+                        <img src="Assests/user6.jpg" alt="">
+                        <div class="fund-details">
+                            <h5>Amelia Kimani</h5>
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                <h6 class="title">Filed - </h6>
+                                <h6 class="detail"> &nbsp; Thu, Jul 10,2018 7:30 PM EDT</h6>
+                            </span>
+                            <span>
+                                <i class="fas fa-calendar-alt"></i>
+                                <h6 class="title">Due - </h6>
+                                <h6 class="detail"> &nbsp; Wed, Jul 23,2019 12:30 PM</h6>
+                            </span>
+                            <span>
+                                <i class="fa fa-map-marker-alt"></i>
+                                <h6 class="title">Address - </h6>
+                                <h6 class="detail"> &nbsp; Hillside Rd, Hiramamdani</h6>
+                            </span>
+                        </div>
+                        <button class="pay"><i class="fas fa-piggy-bank"></i>PAY</button>
+                    </div>
+                    <div class="fund" id="fund2">
+                        <img src="Assests/user7.jpg" alt="">
+                        <div class="fund-details">
+                            <h5>Genevieve juma</h5>
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                <h6 class="title">Filed - </h6>
+                                <h6 class="detail"> &nbsp; Thu, Jul 10,2018 7:30 PM EDT</h6>
+                            </span>
+                            <span>
+                                <i class="fas fa-calendar-alt"></i>
+                                <h6 class="title">Due - </h6>
+                                <h6 class="detail"> &nbsp; Wed, Jul 23,2019 12:30 PM</h6>
+                            </span>
+                            <span>
+                                <i class="fa fa-map-marker-alt"></i>
+                                <h6 class="title">Address - </h6>
+                                <h6 class="detail"> &nbsp; Hillside Rd, Hiramamdani</h6>
+                            </span>
+                        </div>
+                        <button class="pay"><i class="fas fa-piggy-bank"></i>PAY</button>
+                    </div>
+                    <div class="fund" id="fund3">
+                        <img src="Assests/user2.jpg" alt="">
+                        <div class="fund-details">
+                            <h5>Theodore wachira</h5>
+                            <span>
+                                <i class="far fa-calendar"></i>
+                                <h6 class="title">Filed - </h6>
+                                <h6 class="detail"> &nbsp; Thu, Jul 10,2018 7:30 PM EDT</h6>
+                            </span>
+                            <span>
+                                <i class="fas fa-calendar-alt"></i>
+                                <h6 class="title">Due - </h6>
+                                <h6 class="detail"> &nbsp; Wed, Jul 23,2019 12:30 PM</h6>
+                            </span>
+                            <span>
+                                <i class="fa fa-map-marker-alt"></i>
+                                <h6 class="title">Address - </h6>
+                                <h6 class="detail"> &nbsp; Hillside Rd, Hiramamdani</h6>
+                            </span>
+                        </div>
+                        <button class="pay"><i class="fas fa-piggy-bank"></i>PAY</button>
+                    </div>
+
+                    <div class="activity-container">
+                        <h4 class="activity-header">ACTIVITY </h4>
+                        <div class="activity">
+                            <i class="fa fa-circle" id="dot-1"></i>
+                            <div class="activity-detail">
+                                <h4>Claimed $2000</h4>
+                                <h5>23 members got claimed in washington DC</h5>
+                                <h6>05:40 PM</h6>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <i class="fa fa-circle" id="dot-2"></i>
+                            <div class="activity-detail">
+                                <h4>102 New Members</h4>
+                                <h5>We have 102 registrations check out their profiles</h5>
+                                <h6>05:40 PM</h6>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <i class="fa fa-circle" id="dot-3"></i>
+                            <div class="activity-detail">
+                                <h4>3 Claims are waiting</h4>
+                                <h5>Please contribute them, they are waiting for your help</h5>
+                                <h6>05:40 PM</h6>
+                            </div>
+                        </div>
+                        <div class="activity">
+                            <i class="fa fa-circle" id="dot-1"></i>
+                            <div class="activity-detail">
+                                <h4>102 New Members</h4>
+                                <h5>We have 102 registrations check out their profiles</h5>
+                                <h6>05:40 PM</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
